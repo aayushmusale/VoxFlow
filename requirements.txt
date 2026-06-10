@@ -1,0 +1,20 @@
+# Graphical User Interface
+customtkinter>=5.2.2
+
+# Automated Speech Recognition (Speech-To-Text)
+faster-whisper>=1.0.3
+
+# Translation Engine
+deep-translator>=1.11.4
+
+# Text-To-Speech (Neural Voices)
+edge-tts>=7.2.8
+
+# Audio Processing & Signal Mathematics
+sounddevice>=0.4.6
+scipy>=1.10.1
+numpy>=1.23.5
+pygame>=2.6.1
+
+# Optional Tooling for Standalone Executable Packaging
+auto-py-to-exe>=2.42.0
