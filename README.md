@@ -1,11 +1,11 @@
-# 🎙️ Live AI Interpreter: Zero-Latency Cross-Lingual Communication Pipeline
+# 🎙️ VoxFlow: Zero-Latency Cross-Lingual Communication Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![CUDA](https://img.shields.io/badge/CUDA-Supported-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 ![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
 
-The **Live AI Interpreter** is a real-time, asynchronous audio-processing desktop application. It acts as a seamless bridge for cross-lingual communication, designed to capture live microphone input, translate it contextually, and output localized speech directly into digital meeting platforms (like Google Meet, Zoom, or Teams) or live cellular networks.
+The **VoxFlow** is a real-time, asynchronous audio-processing desktop application. It acts as a seamless bridge for cross-lingual communication, designed to capture live microphone input, translate it contextually, and output localized speech directly into digital meeting platforms (like Google Meet, Zoom, or Teams) or live cellular networks.
 
 ---
 
@@ -18,7 +18,7 @@ The **Live AI Interpreter** is a real-time, asynchronous audio-processing deskto
 4. **UI Freezing:** Processing heavy AI workloads locally often freezes the graphical interface.
 
 ### The Engineered Solution
-We built a highly optimized, full-duplex asynchronous data pipeline. Instead of relying on a slow, monolithic AI model, the system uses a **multi-threaded Producer-Consumer architecture**. 
+We built a highly optimized, full-duplex asynchronous data pipeline. Instead of relying on a slow, monolithic AI model, VoxFlow uses a **multi-threaded Producer-Consumer architecture**. 
 It actively listens to the user's microphone, uses mathematical volume thresholds (VAD) to intelligently "slice" the audio the exact millisecond the user stops speaking, and pushes that chunk onto a thread-safe queue. A secondary async loop transcribes it using GPU acceleration, fetches a contextual translation, and plays back a cloned neural voice through a Virtual Audio Cable.
 
 ---
@@ -79,8 +79,8 @@ To completely eradicate phantom translations, we implemented a 5-layer filtering
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/Live-AI-Interpreter.git](https://github.com/yourusername/Live-AI-Interpreter.git)
-   cd Live-AI-Interpreter
+   git clone [https://github.com/yourusername/VoxFlow.git](https://github.com/yourusername/VoxFlow.git)
+   cd VoxFlow
    ```
    
 2. **Install dependencies:**
